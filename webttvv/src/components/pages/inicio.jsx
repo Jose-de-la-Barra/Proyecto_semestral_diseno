@@ -1,9 +1,16 @@
 import './pages_css.scss'
 
-const Inicio = () => {
+const inicio = () => {
     return (
-    <h1>Inicio</h1>
+        <div className='mid-panel'>
+            <div className='container'>
+                <h1>Inicio</h1>
+                <p>Simple Seccion de principales noticias donde se espera notificar al publico
+                </p>
+            </div>
+        </div>
+    
     )
   }
   
-export default Inicio;
+export default inicio;

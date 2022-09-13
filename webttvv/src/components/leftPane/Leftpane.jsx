@@ -31,9 +31,9 @@ const LeftPane = () => {
                         </NavLink>
 
                     
-                    <button className='inscripcion'>
+                    <NavLink to='/inscripciones'>
                         <span>Inscribete</span>
-                    </button>
+                    </NavLink>
                 </nav>
 
                     <button className='Apoyanos'>
