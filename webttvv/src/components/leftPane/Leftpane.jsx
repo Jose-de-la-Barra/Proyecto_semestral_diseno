@@ -13,6 +13,18 @@ const LeftPane = () => {
                     <NavLink to='/Departamentos' >Departamentos</NavLink>
                     <NavLink to='/InSitu' >Trabajos in Situ</NavLink>
                 </nav>
+                <button className='inscripcion'>Inscribete</button>
+                <footer>
+                    <div>
+                        <button className='photo'> </button>
+                        <img alt='user'
+                            src=''/> 
+                    </div>
+                    <div>
+                        
+                    </div>
+                    
+                </footer>
             </div>
             
         </div>
