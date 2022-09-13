@@ -1,13 +1,11 @@
 .left-panel {
     background: rgb(225, 145, 70);
     color: rgb(0, 0, 0);
-    min-height: 100vh;
-    border-radius: 30px;
-    
+    min-height: 100vh;   
 }
     header svg{
         width: fit-content;
-        height: 10em;
+        height: 9em;
         margin-top: 1.7em;
         margin-bottom: 0.7em;
         margin-left: 0.4em;
@@ -28,13 +26,13 @@
         color: #fff;
         cursor: pointer;
         font-size: 1.3em;
-        font-weight: 500;
+        
         width: 100%;
         
         span{
             display: flex;
             align-items: center ;
-            height: 2.4rem;
+            height: 2.7rem;
             width: fit-content;
             padding: 0 0.7em;
         }
@@ -49,9 +47,20 @@
         background-color: unset;
         border: unset;
     }
+    button.Apoyanos{
+        display: block;
+        background: rgb(147, 71, 0);
+        color:#fff;
+        font-weight: 500;
+        width: 14em;
+        height: 3em;
+        border-radius: 1.5em;
+        font-size: 1em;
+        margin-top: 0.5em;
+        margin-left: 3.7em;
+        cursor: pointer;
 
-.Logo{
-    height: 8em;
-    padding-left: 3.3em;
-    margin-right: 0.9em;
-}
+        &:hover {
+            background: rgb(150, 85, 25);
+        }
+    }

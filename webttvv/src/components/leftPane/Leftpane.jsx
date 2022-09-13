@@ -11,40 +11,36 @@ const LeftPane = () => {
                 <header>{logo2}</header>
                 <nav>
                     <NavLink to='/'>
-                        <span>TTVV UAI</span>
+                        <span>Inicio</span>
                         </NavLink>
 
                     <NavLink to='/SobreNosotros' >
                         <span>Sobre Nosotros</span>
                         </NavLink>
 
+                    <NavLink to='/Departamentos' >
+                        <span>Departamentos</span>
+                        </NavLink>
+                        
+                    <NavLink to='/InSitu' >
+                        <span>Trabajos in Situ</span>
+                        </NavLink>
+
                     <NavLink to='/RRSS' >
                         <span>Redes Sociales</span>
                         </NavLink>
 
-                    <NavLink to='/Departamentos' >
-                        <span>Departamentos</span>
-                        </NavLink>
-
-                    <NavLink to='/InSitu' >
-                        <span>Trabajos in Situ</span>
-                        </NavLink>
+                    
                     <button className='inscripcion'>
-                        <span>Apoyanos!</span>
+                        <span>Inscribete</span>
                     </button>
                 </nav>
-                
-                <footer>
-                    <div>
-                        <button className='photo'> </button>
-                        <img alt='user'
-                            src=''/> 
-                    </div>
-                    <div>
 
-                    </div>
-                    
-                </footer>
+                    <button className='Apoyanos'>
+                        <span>¡Apoyanos!</span>
+                    </button>
+
+                
             </div>
             
         </div>
