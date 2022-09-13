@@ -38,11 +38,8 @@ const LeftPane = () => {
 
                     <button className='Apoyanos'>
                         <span>¡Apoyanos!</span>
-                    </button>
-
-                
-            </div>
-            
+                    </button>     
+            </div> 
         </div>
     )
 }
