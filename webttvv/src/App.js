@@ -13,10 +13,12 @@ const App = () =>{
             <Route path='/RRSS' >Redes Sociales</Route>
             <Route path='/Departamentos' >Departamentos</Route>
             <Route path='/InSitu' >Trabajos in Situ</Route>
-            <Route path='/' >Home</Route>
+            
+
           </Routes>
-          <div>RightPanel</div>
+          <div className='right-pane'>RightPanel</div>
         </div>
+        
       </BrowserRouter>
   );
 }

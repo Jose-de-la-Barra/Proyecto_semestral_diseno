@@ -7,13 +7,30 @@ const LeftPane = () => {
             <div className='container'>
                 <header>Icono TTVV</header>
                 <nav>
-                    <NavLink to='/'>TTVV UAI</NavLink>
-                    <NavLink to='/SobreNosotros' >Sobre Nosotros</NavLink>
-                    <NavLink to='/RRSS' >Redes Sociales</NavLink>
-                    <NavLink to='/Departamentos' >Departamentos</NavLink>
-                    <NavLink to='/InSitu' >Trabajos in Situ</NavLink>
+                    <NavLink to='/'>
+                        <span>TTVV UAI</span>
+                        </NavLink>
+
+                    <NavLink to='/SobreNosotros' >
+                        <span>Sobre Nosotros</span>
+                        </NavLink>
+
+                    <NavLink to='/RRSS' >
+                        <span>Redes Sociales</span>
+                        </NavLink>
+
+                    <NavLink to='/Departamentos' >
+                        <span>Departamentos</span>
+                        </NavLink>
+
+                    <NavLink to='/InSitu' >
+                        <span>Trabajos in Situ</span>
+                        </NavLink>
+                    <button className='inscripcion'>
+                        <span>Apoyanos!</span>
+                    </button>
                 </nav>
-                <button className='inscripcion'>Inscribete</button>
+                
                 <footer>
                     <div>
                         <button className='photo'> </button>
@@ -21,7 +38,7 @@ const LeftPane = () => {
                             src=''/> 
                     </div>
                     <div>
-                        
+
                     </div>
                     
                 </footer>
