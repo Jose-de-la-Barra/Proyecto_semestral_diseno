@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  font-family: “Helvetica Neue”,Helvetica,Arial,sans-serif;
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1.4fr;
+  background: #fff;
+  color: #171717;
+}
+
+.right-pane {
+  background: rgb(228, 121, 21);
+}
