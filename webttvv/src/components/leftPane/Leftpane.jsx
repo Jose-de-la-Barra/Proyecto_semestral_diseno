@@ -1,11 +1,14 @@
 import {NavLink} from 'react-router-dom'
+import {logo2} from './icons/icons'
+
+
 import './leftPane.scss'
 
 const LeftPane = () => {
     return ( 
         <div className='left-panel'>
             <div className='container'>
-                <header>Icono TTVV</header>
+                <header>{logo2}</header>
                 <nav>
                     <NavLink to='/'>
                         <span>TTVV UAI</span>

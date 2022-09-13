@@ -2,9 +2,25 @@
     background: rgb(225, 145, 70);
     color: rgb(0, 0, 0);
     min-height: 100vh;
+    border-radius: 30px;
+    
 }
+    header svg{
+        width: fit-content;
+        height: 10em;
+        margin-top: 1.7em;
+        margin-bottom: 0.7em;
+        margin-left: 0.4em;
+        align-items: center;
+    }
     nav{
         padding-left: 3.3em;
+    }
+
+
+    nav svg {
+        height: 1.3em;
+        margin-right: 0.9em;
     }
 
     nav > *, button.inscripcion {
@@ -34,3 +50,8 @@
         border: unset;
     }
 
+.Logo{
+    height: 8em;
+    padding-left: 3.3em;
+    margin-right: 0.9em;
+}
