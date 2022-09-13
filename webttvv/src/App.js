@@ -5,7 +5,7 @@ import './App.scss';
 const App = () =>{
   return (
       <BrowserRouter>
-        <div className="App">
+        <div className="app">
           <LeftPane />
           <Routes>
             <Route path='/' exact>TTVV UAI</Route>
