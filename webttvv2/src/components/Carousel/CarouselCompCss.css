@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+.carousel{    
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+}
+@media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+}
+.img{
+    filter: brightness(60%);
+    size: 250%;
+    transform: translateY(-10%);
+    
+}
+.video{
+    filter: brightness(60%);
+    size: 250%;
+    transform: translateY(-0%);
+}
+.mid-caption{
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.mid-caption h1{
+    font-size: 500%;
+}
