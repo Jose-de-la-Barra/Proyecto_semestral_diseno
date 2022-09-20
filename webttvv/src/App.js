@@ -1,6 +1,9 @@
-import {BrowserRouter,Route, Routes} from 'react-router-dom'
-import { LeftPane } from './components';
+import {BrowserRouter,Route, Routes} from 'react-router-dom';
+import { LeftPane,Inicio,Sobrenosotros,Departamentos,InSitu,RRSS,Inscripciones } from './components';
+
+
 import './App.scss';
+
 
 const App = () =>{
   return (
@@ -8,15 +11,14 @@ const App = () =>{
         <div className="app">
           <LeftPane />
           <Routes>
-            <Route path='/' exact>TTVV UAI</Route>
-            <Route path='/SobreNosotros' >Sobre Nosotros</Route>
-            <Route path='/RRSS' >Redes Sociales</Route>
-            <Route path='/Departamentos' >Departamentos</Route>
-            <Route path='/InSitu' >Trabajos in Situ</Route>
-            
-
+            <Route path='/' exact element={<Inicio />}/>
+            <Route path='/Sobrenosotros' element={<Sobrenosotros />} />
+            <Route path='/RRSS' element={<RRSS/>}/>
+            <Route path='/Departamentos' element={<Departamentos/>} />
+            <Route path='/InSitu' element={<InSitu/>}/>
+            <Route path='/Inscripciones' element={<Inscripciones/>}/>
           </Routes>
-          <div className='right-pane'>RightPanel</div>
+          <div className='right-pane'>Noticias eventos/ Activos</div>
         </div>
         
       </BrowserRouter>
