@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-
 .carousel{    
     height: 90vh;
     width: 100%;
@@ -22,7 +20,7 @@
 .video{
     filter: brightness(60%);
     size: 250%;
-    transform: translateY(-0%);
+    transform: translateY(-10%);
 }
 .mid-caption{
     font-family: 'Bebas Neue', cursive;
