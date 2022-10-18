@@ -12,8 +12,8 @@ function IndividualIntervalsExample() {
           alt="First slide"
         />
         <Carousel.Caption className='mid-caption'>
-          <h1>First slide label</h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1>San Felipe Primavera 2022</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='carousel' interval={500}>
