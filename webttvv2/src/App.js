@@ -7,6 +7,7 @@ import './App.scss';
 import IndividualIntervalsExample from './components/Carousel/CarouselComp';
 import NavScrollExample from './components/Navbar/NavbarComp';
 import Footer from './components/Footer/Footer';
+import Cards from './components/Cards/Cards';
 
 
 const App = () =>{
@@ -15,6 +16,7 @@ const App = () =>{
         <div className="app">
           <NavScrollExample/>
           <IndividualIntervalsExample/>
+          <Cards></Cards>
           <Footer></Footer>
         </div>
         
