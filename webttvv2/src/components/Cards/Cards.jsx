@@ -11,9 +11,12 @@ import {
 import './cardsscss.scss'
 
 
+
 export default function Cards() {
   return (
-    <MDBRow className='row-cols-2 row-cols-md-3 g-4'>
+    
+    
+    <MDBRow className='row-cols-2 row-cols-md-3 g-5 h-10 '>
       <MDBCol>
         <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
@@ -119,5 +122,6 @@ export default function Cards() {
       </MDBCol>
       
     </MDBRow>
+    
   );
 }
