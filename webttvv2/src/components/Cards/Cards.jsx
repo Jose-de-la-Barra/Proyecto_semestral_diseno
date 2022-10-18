@@ -8,17 +8,21 @@ import {
   MDBRow,
   MDBCol
 } from 'mdb-react-ui-kit';
+import './cardsscss.scss'
+
 
 export default function Cards() {
   return (
-    <MDBRow className='row-cols-2 row-cols-md-2 g-4'>
+    <MDBRow className='row-cols-2 row-cols-md-3 g-4'>
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/041.webp'
+            src={require('./resources/diseno.jpeg')}
+            
             alt='...'
             position='top'
           />
+          
           <MDBCardBody>
             <MDBCardTitle>Diseño & Construcción</MDBCardTitle>
             <MDBCardText>
@@ -29,9 +33,9 @@ export default function Cards() {
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src={require('./resources/vinculacion.webp.jpeg')}
             alt='...'
             position='top'
           />
@@ -45,9 +49,9 @@ export default function Cards() {
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src={require('./resources/formacion.jpeg')}
             alt='...'
             position='top'
           />
@@ -61,9 +65,9 @@ export default function Cards() {
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src={require('./resources/educacion.jpeg')}
             alt='...'
             position='top'
           />
@@ -79,9 +83,9 @@ export default function Cards() {
       
 
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src={require('./resources/difusion.jpeg')}
             alt='...'
             position='top'
           />
@@ -94,10 +98,13 @@ export default function Cards() {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
+
+
+
       <MDBCol>
-        <MDBCard>
+        <MDBCard className='h-50' alignment='center'>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src={require('./resources/financiamiento.webp.jpeg')}
             alt='...'
             position='top'
           />
@@ -110,22 +117,7 @@ export default function Cards() {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol>
-        <MDBCard>
-          <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Sustentabilidad</MDBCardTitle>
-            <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
+      
     </MDBRow>
   );
 }
