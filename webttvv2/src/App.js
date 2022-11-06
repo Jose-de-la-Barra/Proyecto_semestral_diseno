@@ -8,7 +8,9 @@ import IndividualIntervalsExample from './components/Carousel/CarouselComp';
 import NavScrollExample from './components/Navbar/NavbarComp';
 import Footer from './components/Footer/Footer';
 import Cards from './components/Cards/Cards';
-import TituloCards from './components/Cards/TituloCards';
+import SobreNosotros from './components/SobreNosotros/SN';
+import Donaciones from './components/Donaciones/donaciones';
+
 
 
 const App = () =>{
@@ -17,8 +19,9 @@ const App = () =>{
         <div className="app">
           <NavScrollExample/>
           <IndividualIntervalsExample/>
-          <TituloCards/>
+          <SobreNosotros/>
           <Cards></Cards>
+          <Donaciones/>
           <Footer></Footer>
         </div>
         

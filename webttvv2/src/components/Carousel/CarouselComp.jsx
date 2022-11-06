@@ -27,13 +27,14 @@ function IndividualIntervalsExample() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
+      
       <Carousel.Item className='carousel'>
         <video
           className="video d-block w-100 img-fluid "
           src={require('./imgs/VideoSanEsteban.mp4')}
           type="video/mov"
           alt="Third slide"
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop
           muted
         />

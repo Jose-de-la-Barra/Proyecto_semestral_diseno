@@ -3,7 +3,7 @@
 .carousel{    
     height: 90vh;
     width: 100%;
-    margin: auto;
+    margin:auto;
 }
 @media (max-width: 900px) {
     .carousel {
