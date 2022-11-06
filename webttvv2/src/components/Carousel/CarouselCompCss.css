@@ -1,21 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.carousel1{    
-    height: 90vh;
-    width: 100%;
+@media (min-width:1000px) {
+    .carousel1{    
+        height: 90vh;
+    }
+    
+}
+
+.mid-caption h1{
+    font-size: 500%;
     
 }
 @media (max-width: 900px) {
-    .carousel1 {
+    .carousel12{
       width:auto;
       height:auto;
     }
+    .mid-caption h1{
+        font-size: 300%;
+    }
+
+}
+@media (max-width: 400px) {
+    .mid-caption h1{
+        font-size: 200%;
+    }
+
 }
 .img{
     filter: brightness(60%);
     size: 250%;
     transform: translateY(-10%);
+
     
+     
 }
 .video{
     filter: brightness(60%);
@@ -27,6 +45,3 @@
     
 }
 
-.mid-caption h1{
-    font-size: 500%;
-}

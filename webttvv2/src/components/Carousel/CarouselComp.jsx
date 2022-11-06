@@ -5,7 +5,7 @@ import './CarouselCompCss.css'
 function IndividualIntervalsExample() {
   return (
     <Carousel>
-      <Carousel.Item className='carousel' interval={6000}>
+      <Carousel.Item className='carousel carousel1' interval={6000}>
         <img
           className="img d-block w-100"
           src={require('./imgs/img1.jpeg')}
@@ -16,7 +16,7 @@ function IndividualIntervalsExample() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='carousel' interval={5600}>
+      <Carousel.Item className='carousel carousel1' interval={5600}>
         <img
           className="img d-block w-100"
           src={require('./imgs/MechoneoSocial.jpeg')}
@@ -28,7 +28,7 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
       
-      <Carousel.Item className='carousel'>
+      <Carousel.Item className='carousel carousel1'>
         <video
           className="video d-block w-100 img-fluid "
           src={require('./imgs/VideoSanEsteban.mp4')}
