@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Route, Routes} from 'react-router-dom';
+import { LeftPane,Inicio,Sobrenosotros,Departamentos,InSitu,RRSS,Inscripciones } from './components';
 
-function App() {
+
+import './App.scss';
+
+
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <div className="app">
+          <LeftPane />
+          <Routes>
+            <Route path='/' exact element={<Inicio />}/>
+            <Route path='/Sobrenosotros' element={<Sobrenosotros />} />
+            <Route path='/RRSS' element={<RRSS/>}/>
+            <Route path='/Departamentos' element={<Departamentos/>} />
+            <Route path='/InSitu' element={<InSitu/>}/>
+            <Route path='/Inscripciones' element={<Inscripciones/>}/>
+          </Routes>
+          <div className='right-pane'>Noticias eventos/ Activos</div>
+        </div>
+        
+      </BrowserRouter>
   );
 }
 
+
 export default App;
+ 
+
+
+
