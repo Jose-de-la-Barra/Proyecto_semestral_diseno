@@ -3,7 +3,7 @@ import './SN.scss'
 
 export default function SobreNosotros() {
     return (
-        <div>
+        <div id='SobreNosotros'>
             <h1 className='text-center titulo'>
                 Sobre Nosotros
             </h1>

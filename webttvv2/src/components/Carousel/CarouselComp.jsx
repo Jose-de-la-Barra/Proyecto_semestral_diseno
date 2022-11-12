@@ -28,15 +28,12 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
       
-      <Carousel.Item className='carousel carousel1'>
-        <video
-          className="video d-block w-100 img-fluid "
-          src={require('./imgs/VideoSanEsteban.mp4')}
-          type="video/mov"
-          alt="Third slide"
-          autoPlay="autoplay"
-          loop
-          muted
+      <Carousel.Item className='carousel carousel1'interval={5600}>
+       
+        <img
+          className="img d-block w-100"
+          src={require('./imgs/Img6.jpeg')}
+          alt="Second slide"
         />
         <Carousel.Caption className='mid-caption'>
           <h1>San Esteban Invierno 2022</h1>

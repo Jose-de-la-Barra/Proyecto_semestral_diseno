@@ -16,7 +16,7 @@ import './cardsscss.scss'
 export default function Cards() {
   return (
     
-    <div className='cajacontainer'>
+    <div className='cajacontainer'id='Departamentos'>
 
       <h1 className='text-center titulo'>
         Nuestros Departamentos
