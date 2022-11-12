@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer';
 import Cards from './components/Cards/Cards';
 import SobreNosotros from './components/SobreNosotros/SN';
 import Donaciones from './components/Donaciones/donaciones';
-
+import Integrantes from './components/Integrantes/integrantes';
 
 
 const App = () =>{
@@ -22,6 +22,7 @@ const App = () =>{
           <SobreNosotros/>
           <Cards></Cards>
           <Donaciones/>
+          <Integrantes/>
           <Footer></Footer>
         </div>
         

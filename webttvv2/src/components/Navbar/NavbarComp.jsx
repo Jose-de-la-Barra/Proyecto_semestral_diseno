@@ -15,11 +15,11 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#action2">Departamentos</Nav.Link>
-            <Nav.Link href="#action3">Trabajos In Situ</Nav.Link>
-            <Nav.Link href="#action4">RRSS</Nav.Link>
-            <Nav.Link href="#action5">Inscribete</Nav.Link>
+            <Nav.Link href="#SobreNosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="#Departamenos">Departamentos</Nav.Link>
+            <Nav.Link href="#Trabajos">Trabajos In Situ</Nav.Link>
+            <Nav.Link href="#RRSS">RRSS</Nav.Link>
+            <Nav.Link href="#Inscribete">Inscribete</Nav.Link>
 
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action6">Action</NavDropdown.Item>
@@ -35,14 +35,14 @@ function NavScrollExample() {
               Link
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex ">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Buscar"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Buscar</Button>
+            <Button variant="outline-light">Buscar</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
