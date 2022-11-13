@@ -10,7 +10,7 @@ function NavScrollExample() {
     <>
     <Navbar className='Navbar-custom' variant='dark' expand="lg">
       <Container  fluid >
-        <Navbar.Brand as={Link} to="/">Trabajos Voluntarios</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/Inicio">Trabajos Voluntarios</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse className='justify-content-center' id="navbarScroll">
           <Nav
@@ -18,7 +18,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/Inicio">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/SobreNosotros ">Sobre Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/Departamentos">Departamentos</Nav.Link>
             <Nav.Link as={Link} to="/InSitu">Trabajos In Situ</Nav.Link>

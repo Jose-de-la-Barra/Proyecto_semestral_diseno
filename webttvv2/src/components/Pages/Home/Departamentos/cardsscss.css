@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.card-height{
+    height: 50%;
+}
+.titulo{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.parrafo{
+    
+    text-align: justify;
+    margin-left:20%;
+    margin-right:20%;
+    
+}
+
+
+.cajacontainer{
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    filter: brightness(40%);
+}
+.hero-container {
+    
+    height: 95vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    filter: brightness(100%);
+    object-fit: contain;
+    justify-content:center ;
+
+}
+
+.hero-container > h1{
+    color: #fff;
+    font-size: 80px;
+    margin-top: -1%;
+    font-weight: 700;
+
+}
+
+.hero-container > p {
+    margin-top: 0px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1060px) {
+    .cajacontainer {
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:5%;
+    }
+    .hero-container > h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+   
+    .hero-container > h1{
+        font-size: 50px;
+        
+    }
+}
+@media screen and (max-width: 670px) {
+   
+    .hero-container > h1{
+        font-size: 30px;
+        
+    }
+}

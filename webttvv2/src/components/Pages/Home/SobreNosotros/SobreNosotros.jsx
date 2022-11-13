@@ -1,11 +1,10 @@
 import React from 'react';
 import './SN.scss'
-import Departamentos from '../Departamentos/Departamentos';
+
+
 export default function SobreNosotros() {
     return (
         <div id='SobreNosotros'>
-
-            <Departamentos/>
             <h1 className='text-center titulo'>
                 Sobre Nosotros
             </h1>

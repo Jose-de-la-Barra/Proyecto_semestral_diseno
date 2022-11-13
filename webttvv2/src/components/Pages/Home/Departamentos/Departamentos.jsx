@@ -9,7 +9,7 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 import { MDBBadge } from 'mdb-react-ui-kit';
-import './cardsscss.scss'
+import './cardsscss.css'
 
 
 
