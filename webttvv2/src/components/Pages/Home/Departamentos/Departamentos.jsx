@@ -13,7 +13,7 @@ import './cardsscss.scss'
 
 
 
-export default function Cards() {
+export default function Departamentos() {
   return (
     
     <div className='cajacontainer'id='Departamentos'>

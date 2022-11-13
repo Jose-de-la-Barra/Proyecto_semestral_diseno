@@ -1,13 +1,16 @@
 
-import {Button, Container, Form,Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import './NavbarCompCss.css' 
 
+import {Outlet, Link} from 'react-router-dom';
+ 
 
 function NavScrollExample() {
   return (
+    <>
     <Navbar className='Navbar-custom' variant='dark' expand="lg">
       <Container  fluid >
-        <Navbar.Brand href="/">Trabajos Voluntarios</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Trabajos Voluntarios</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse className='justify-content-center' id="navbarScroll">
           <Nav
@@ -15,11 +18,13 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#SobreNosotros">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#Departamentos">Departamentos</Nav.Link>
-            <Nav.Link href="#Trabajos">Trabajos In Situ</Nav.Link>
-            <Nav.Link href="#RRSS">RRSS</Nav.Link>
-            <Nav.Link href="#Inscribete">Inscribete</Nav.Link> 
+            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/SobreNosotros ">Sobre Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/Departamentos">Departamentos</Nav.Link>
+            <Nav.Link as={Link} to="/InSitu">Trabajos In Situ</Nav.Link>
+            <Nav.Link as={Link} to="/">RRSS</Nav.Link>
+            <Nav.Link href="#Inscribete">Inscribete</Nav.Link>
+             
 
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action6">Action</NavDropdown.Item>
@@ -38,7 +43,12 @@ function NavScrollExample() {
           
         </Navbar.Collapse>
       </Container>
+      
     </Navbar>
+ 
+    <section><Outlet/></section>
+    </>
+      
   );
 }
 
