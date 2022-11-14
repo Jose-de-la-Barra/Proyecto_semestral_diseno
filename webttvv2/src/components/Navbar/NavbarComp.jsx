@@ -1,11 +1,11 @@
 
-import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import {Container,Nav,Navbar,} from 'react-bootstrap';
 import './NavbarCompCss.css' 
 
 import {Outlet, Link} from 'react-router-dom';
  
 
-function NavScrollExample() {
+function NavbarComp() {
   return (
     <>
     <Navbar className='Navbar-custom' variant='dark' expand="lg">
@@ -21,22 +21,9 @@ function NavScrollExample() {
             <Nav.Link as={Link} to="/Inicio">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/Departamentos">Departamentos</Nav.Link>
             <Nav.Link as={Link} to="/InSitu">Trabajos In Situ</Nav.Link>
-            <Nav.Link as={Link} to="/">RRSS</Nav.Link>
-            <Nav.Link href="#Inscribete">Inscribete</Nav.Link>
-             
-
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action6">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action7">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action8">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={Link} to="/">RRSS</Nav.Link>            
             <Nav.Link href="#" disabled>
-              Link
+              Inscribete
             </Nav.Link>
           </Nav>
           
@@ -51,4 +38,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavbarComp;

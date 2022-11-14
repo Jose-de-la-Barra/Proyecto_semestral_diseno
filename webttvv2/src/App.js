@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.scss';
 
-import NavScrollExample from './components/Navbar/NavbarComp';
+import NavbarComp from './components/Navbar/NavbarComp';
 import IndividualIntervalsExample from './components/Pages/Home/InSitu/Carousel/CarouselComp'
 import Footer from './components/Footer/Footer';
 import Departamentos from './components/Pages/Home/Departamentos/Departamentos';
@@ -22,7 +22,7 @@ const App = () =>{
         <div className="app">
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<NavScrollExample/>}>
+              <Route path='/' element={<NavbarComp/>}>
                 <Route index element={<Inicio/>}/>
                 <Route path='/Departamentos' element={<Departamentos/>}/>
                 <Route path='/InSitu' element={<InSitu/>}/>
