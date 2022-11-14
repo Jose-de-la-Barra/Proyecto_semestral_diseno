@@ -1,11 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import * as api_getvideo from './api_getvideo'
 
 //import Carousel from './Carousel/CarouselComp'
 export default function Inicio() {
+
+    //Requerimos el video desde web
+    const [video, setVideo] = useState(api_getvideo.get_video());
+
     return (
+        
         <div >
             <div className='hero-container'>
-                <video src={require('../InSitu/Carousel/imgs/VSE.mp4')} autoPlay loop muted />
+                
+                <video src={api_getvideo.get_video_url((video[[0]]).name)}
+                    autoPlay
+                    loop
+                    muted 
+                    //dado que es solo un archivo, lo colocamos a mano.    
+                    
+                    />
                 <h1>TRABAJOS VOLUNTARIOS</h1>
                 <p>Universidad Adolfo Ibañez</p>
             </div>
