@@ -129,6 +129,7 @@ video {
      align-self: center;
      border-top: solid 3px;
      border-bottom: solid 3px;
+     color: #fff;
  }
  
  /* Blockquote header */
@@ -139,6 +140,7 @@ video {
      font-weight: 700;
      line-height: 1;
      margin: 0;
+     color: #fff;
  }
  
  /* Blockquote right double quotes */
@@ -150,6 +152,7 @@ video {
      line-height: 0;
      bottom: -43px;
      right: 30px;
+     color: #fff;
  }
  
  /* increase header size after 600px */
@@ -170,6 +173,7 @@ video {
      margin: 0;
      padding-top: 20px;
      z-index: 1;
+     color: #fff;
  }
 
 

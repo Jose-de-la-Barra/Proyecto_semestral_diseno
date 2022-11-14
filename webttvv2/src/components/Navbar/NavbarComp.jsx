@@ -19,7 +19,6 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link as={Link} to="/Inicio">Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/SobreNosotros ">Sobre Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/Departamentos">Departamentos</Nav.Link>
             <Nav.Link as={Link} to="/InSitu">Trabajos In Situ</Nav.Link>
             <Nav.Link as={Link} to="/">RRSS</Nav.Link>

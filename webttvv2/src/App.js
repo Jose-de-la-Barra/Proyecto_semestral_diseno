@@ -24,7 +24,6 @@ const App = () =>{
             <Routes>
               <Route path='/' element={<NavScrollExample/>}>
                 <Route index element={<Inicio/>}/>
-                <Route path='/SobreNosotros' element={<SobreNosotros/>}/>
                 <Route path='/Departamentos' element={<Departamentos/>}/>
                 <Route path='/InSitu' element={<InSitu/>}/>
                 <Route path='*' element={<Navigate replace to='/'/>}/>
