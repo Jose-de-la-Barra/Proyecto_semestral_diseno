@@ -16,118 +16,130 @@ import './cardsscss.css'
 export default function Departamentos() {
   return (
     
-    <div className='cajacontainer'id='Departamentos'>
-
-      <h1 className='text-center titulo'>
-        Nuestros Departamentos
-        <MDBBadge className='ms-2'></MDBBadge>
-      </h1>
-
-       <MDBRow className='row-cols-2 row-cols-md-3 g-5 h-10 '>
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
-              <MDBCardImage
-                src={require('./resources/diseno.jpeg')}
-                
-                alt='...'
-                position='top'
+    <div className='cajacontainer'>
+      <div className='Home-section1'>
+        <h1 className='text-center titulo'>
+            Nuestros Departamentos
+        </h1>
+        <p style={{marginTop:'4rem'}}>
+          Porque nos importa ser integros en cada uno de nuestros aspectos, dividimos la organización en departamentos para poder otorgar la mejor experiencia posible a nuestros voluntarios.
+        </p>
+      </div>
+      <MDBCard className='container_card'>
+        <MDBRow className='g-0'>
+          <MDBCol md='4'>
+            <MDBCardImage 
+            src={require('./resources/diseno.jpeg')}
+              fluid
+              className='img_card'
               />
-              
+          </MDBCol>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Diseño & Construcción</MDBCardTitle>
+                <MDBCardTitle className='titulo titulo_card'>Diseño y Construcción</MDBCardTitle>
                 <MDBCardText>
-                  
+                  Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
-              <MDBCardImage
-                src={require('./resources/vinculacion.webp.jpeg')}
-                alt='...'
-                position='top'
-              />
+            </MDBCol>
+          </MDBRow>
+      </MDBCard> {/* Termino de card DYC*/}
+      <MDBCard className='container_card'>
+          <MDBRow className='g-0'>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Vinculación</MDBCardTitle>
+                <MDBCardTitle className='titulo'>Vinculación</MDBCardTitle>
                 <MDBCardText>
-                  This is a longer card with supporting text below as a natural lead-in to additional content.
-                  This content is a little bit longer.
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
+            </MDBCol>
+            <MDBCol md='4'>
               <MDBCardImage
-                src={require('./resources/formacion.jpeg')}
-                alt='...'
-                position='top'
+              src={require('./resources/vinculacion.webp.jpeg')} 
+              fluid
+              className='img_card'/>
+            </MDBCol>
+          </MDBRow>
+      </MDBCard>{/* Termino de card Vinculacion*/}
+      <MDBCard className='container_card'>
+        <MDBRow className='g-0'>
+          <MDBCol md='4'>
+            <MDBCardImage 
+            src={require('./resources/formacion.jpeg')}
+              fluid
+              className='img_card'
               />
+          </MDBCol>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Formación</MDBCardTitle>
+                <MDBCardTitle className='titulo titulo_card'>Formación</MDBCardTitle>
                 <MDBCardText>
-                  This is a longer card with supporting text below as a natural lead-in to additional content.
-                  This content is a little bit longer.
+                  Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
-              <MDBCardImage
-                src={require('./resources/educacion.jpeg')}
-                alt='...'
-                position='top'
-              />
+            </MDBCol>
+          </MDBRow>
+      </MDBCard>{/* Termino de card Vinculacion*/}
+      <MDBCard className='container_card'>
+          <MDBRow className='g-0'>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Educación</MDBCardTitle>
+                <MDBCardTitle className='titulo'>Educación</MDBCardTitle>
                 <MDBCardText>
-                  This is a longer card with supporting text below as a natural lead-in to additional content.
-                  This content is a little bit longer.
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          
-
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
+            </MDBCol>
+            <MDBCol md='4'>
               <MDBCardImage
-                src={require('./resources/difusion.jpeg')}
-                alt='...'
-                position='top'
+              src={require('./resources/educacion.jpeg')} 
+              fluid
+              className='img_card'/>
+            </MDBCol>
+          </MDBRow>
+      </MDBCard>{/* Termino de card Educacion*/}
+      <MDBCard className='container_card'>
+        <MDBRow className='g-0'>
+          <MDBCol md='4'>
+            <MDBCardImage 
+            src={require('./resources/formacion.jpeg')}
+              fluid
+              className='img_card'
               />
+          </MDBCol>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Difusión</MDBCardTitle>
+                <MDBCardTitle className='titulo titulo_card'>Difusión</MDBCardTitle>
                 <MDBCardText>
-                  This is a longer card with supporting text below as a natural lead-in to additional content.
-                  This content is a little bit longer.
+                  Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-
-
-
-          <MDBCol>
-            <MDBCard className='h-50' alignment='center'>
-              <MDBCardImage
-                src={require('./resources/financiamiento.webp.jpeg')}
-                alt='...'
-                position='top'
-              />
+            </MDBCol>
+          </MDBRow>
+      </MDBCard>{/* Termino de card Difusion*/}
+      <MDBCard className='container_card'>
+          <MDBRow className='g-0'>
+            <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle>Financiamiento</MDBCardTitle>
+                <MDBCardTitle className='titulo'>Financiamiento y Proyectos</MDBCardTitle>
                 <MDBCardText>
-                  This is a longer card with supporting text below as a natural lead-in to additional content.
-                  This content is a little bit longer.
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
                 </MDBCardText>
               </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-          
-        </MDBRow>
+            </MDBCol>
+            <MDBCol md='4'>
+              <MDBCardImage
+              src={require('./resources/financiamiento.webp.jpeg')} 
+              fluid
+              className='img_card'/>
+            </MDBCol>
+          </MDBRow>
+      </MDBCard>{/* Termino de card Financiamiento*/}
+       
     </div>
     
     

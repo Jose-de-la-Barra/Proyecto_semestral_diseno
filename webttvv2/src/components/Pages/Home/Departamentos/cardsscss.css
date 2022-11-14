@@ -171,3 +171,26 @@ video {
      padding-top: 20px;
      z-index: 1;
  }
+
+
+
+
+ .titulo_card {
+    font-size: 100%;
+ }
+ .container_card{
+    margin-top:3rem ;
+    border-radius: 2rem;
+    max-width: 100%;
+ }
+ .img_card{
+    border-radius: 2rem;
+ }
+
+ @media screen and (max-width: 800px) {
+   
+    .container_card{
+        max-width: 60%;
+        left:20%;
+    }
+}
