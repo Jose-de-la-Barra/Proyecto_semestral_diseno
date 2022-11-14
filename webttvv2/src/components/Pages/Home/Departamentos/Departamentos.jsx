@@ -36,7 +36,7 @@ export default function Departamentos() {
           </MDBCol>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo titulo_card'>Diseño y Construcción</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Diseño y Construcción</h3>
                 <MDBCardText>
                   Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
@@ -48,7 +48,7 @@ export default function Departamentos() {
           <MDBRow className='g-0'>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo'>Vinculación</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Vinculación</h3>
                 <MDBCardText>
                   This is a wider card with supporting text below as a natural lead-in to additional content. This
                   content is a little bit longer.
@@ -74,7 +74,7 @@ export default function Departamentos() {
           </MDBCol>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo titulo_card'>Formación</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Formación</h3>
                 <MDBCardText>
                   Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
@@ -86,7 +86,7 @@ export default function Departamentos() {
           <MDBRow className='g-0'>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo'>Educación</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Educación</h3>
                 <MDBCardText>
                   This is a wider card with supporting text below as a natural lead-in to additional content. This
                   content is a little bit longer.
@@ -105,14 +105,14 @@ export default function Departamentos() {
         <MDBRow className='g-0'>
           <MDBCol md='4'>
             <MDBCardImage 
-            src={require('./resources/formacion.jpeg')}
+            src={require('./resources/difusion.jpeg')}
               fluid
               className='img_card'
               />
           </MDBCol>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo titulo_card'>Difusión</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Difusión</h3>
                 <MDBCardText>
                   Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
                 </MDBCardText>
@@ -124,10 +124,9 @@ export default function Departamentos() {
           <MDBRow className='g-0'>
             <MDBCol md='8'>
               <MDBCardBody>
-                <MDBCardTitle className='titulo'>Financiamiento y Proyectos</MDBCardTitle>
+                <h3 className='titulo titulo_card'>Financiamiento y Proyectos</h3>
                 <MDBCardText>
-                  This is a wider card with supporting text below as a natural lead-in to additional content. This
-                  content is a little bit longer.
+                  Encargados de dar la luz verde a los proyectos y juntar el dinero para hacer trabajos in situ posibles.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
@@ -141,7 +140,5 @@ export default function Departamentos() {
       </MDBCard>{/* Termino de card Financiamiento*/}
        
     </div>
-    
-    
   );
 }
