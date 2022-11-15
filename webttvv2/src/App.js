@@ -7,7 +7,7 @@ import './App.scss';
 
 import NavbarComp from './components/Navbar/NavbarComp';
 import IndividualIntervalsExample from './components/Pages/Home/InSitu/Carousel/CarouselComp'
-import Footer from './components/Footer/Footer';
+import Footers from './components/Navbar/Footers';
 import Departamentos from './components/Pages/Home/Departamentos/Departamentos';
 import SobreNosotros from './components/Pages/Home/SobreNosotros/SobreNosotros';
 import Donaciones from './components/Donaciones/donaciones';
@@ -27,9 +27,15 @@ const App = () =>{
                 <Route path='/Departamentos' element={<Departamentos/>}/>
                 <Route path='/InSitu' element={<InSitu/>}/>
                 <Route path='*' element={<Navigate replace to='/'/>}/>
+                
               </Route>
+              
             </Routes>
+          
+          
           </BrowserRouter>
+
+        
         </div>
         
   );

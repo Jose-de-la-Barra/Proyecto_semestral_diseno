@@ -2,6 +2,7 @@
 import {Container,Nav,Navbar,} from 'react-bootstrap';
 import './NavbarCompCss.css' 
 
+import Footers from './Footers.jsx';
 import {Outlet, Link} from 'react-router-dom';
  
 
@@ -32,7 +33,14 @@ function NavbarComp() {
       
     </Navbar>
  
-    <section><Outlet/></section>
+    <section>
+      <Outlet>
+      </Outlet>     
+    </section>
+    
+
+
+    
     </>
       
   );
