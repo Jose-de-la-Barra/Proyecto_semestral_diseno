@@ -3,6 +3,7 @@ import './SN.scss'
 
 
 export default function Apoyanos() {
+
     return (
         <div id='SobreNosotros'>
             <div className='Home-section1'>
@@ -10,9 +11,11 @@ export default function Apoyanos() {
                     Apoyanos
                 </h1>
                     <p>¿Quieres apoyarnos?</p>
+                    <p>Ayudanos con un cuartón!</p>
                 
             </div>
 
         </div>
     );
 }
+

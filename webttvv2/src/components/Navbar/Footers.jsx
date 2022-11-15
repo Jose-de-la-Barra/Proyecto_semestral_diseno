@@ -10,24 +10,16 @@ export default function Footers() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.facebook.com/ttvvuai/' className='me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/ttvv_uai/?hl=es' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/company/trabajos-voluntarios-universidad-adolfo-ib%C3%A1%C3%B1ez' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="github" />
-          </a>
+          
         </div>
       </section>
 
@@ -36,7 +28,7 @@ export default function Footers() {
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
+                <MDBIcon icon="" className="me-3" />
                 Trabajos Voluntarios UAI
               </h6>
               <p>
@@ -47,17 +39,17 @@ export default function Footers() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Secciones</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/' className='text-reset'>
                   Inicio
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Departamentos' className='text-reset'>
                   Departamentos
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/InSitu' className='text-reset'>
                   Trabajos in Situ
                 </a>
               </p>
@@ -65,27 +57,22 @@ export default function Footers() {
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Nuestras redes</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
+                <a href='https://www.facebook.com/ttvvuai/' className='text-reset'>
+                  Facebook
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Settings
+                <a href='https://www.linkedin.com/company/trabajos-voluntarios-universidad-adolfo-ib%C3%A1%C3%B1ez' className='text-reset'>
+                  Linkedn
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Orders
+                <a href='https://www.instagram.com/ttvv_uai/?hl=es' className='text-reset'>
+                  Instagram
                 </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
+              </p>             
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
@@ -96,7 +83,7 @@ export default function Footers() {
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                departamentodifusionttvv@gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> +56 9 9509 1068
@@ -108,7 +95,7 @@ export default function Footers() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2020-2022 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+        <a className='text-reset fw-bold' href='https://www.linkedin.com/company/trabajos-voluntarios-universidad-adolfo-ib%C3%A1%C3%B1ez'>
           TTVV UAI
         </a>
       </div>

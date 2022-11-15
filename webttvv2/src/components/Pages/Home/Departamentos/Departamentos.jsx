@@ -50,8 +50,7 @@ export default function Departamentos() {
               <MDBCardBody>
                 <h3 className='titulo titulo_card'>Vinculación</h3>
                 <MDBCardText>
-                  This is a wider card with supporting text below as a natural lead-in to additional content. This
-                  content is a little bit longer.
+                Departamento encargado de mantener el espíritu de trabajos voluntarios durante todo el año realizando actividades en Peñalolén y otras comunas de Santiago.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
@@ -76,7 +75,7 @@ export default function Departamentos() {
               <MDBCardBody>
                 <h3 className='titulo titulo_card'>Formación</h3>
                 <MDBCardText>
-                  Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
+                Encargados de hacer los manuales que servirán de guía en las actividades que se realizan en trabajos in situ
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
@@ -88,8 +87,7 @@ export default function Departamentos() {
               <MDBCardBody>
                 <h3 className='titulo titulo_card'>Educación</h3>
                 <MDBCardText>
-                  This is a wider card with supporting text below as a natural lead-in to additional content. This
-                  content is a little bit longer.
+                Departamento que se encarga de mantener activo el preuniversitario “social crece” haciendo clases online a estudiantes de Peñalolén.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
@@ -114,7 +112,7 @@ export default function Departamentos() {
               <MDBCardBody>
                 <h3 className='titulo titulo_card'>Difusión</h3>
                 <MDBCardText>
-                  Encargados de diseñar las construcciones y procedimientos dentro de trabajos in situ. 
+                Encargados de mantener activas todas las redes sociales de TTVV para así darse a conocer a la comunidad universitaria y de Peñalolén. También es el departamento que está encargado de ciertas tareas logísticas que facilitan el funcionamiento de la organización.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
