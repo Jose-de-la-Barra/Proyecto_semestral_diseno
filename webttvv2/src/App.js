@@ -15,6 +15,7 @@ import Integrantes from './components/Integrantes/integrantes';
 import InSitu from './components/Pages/Home/InSitu/InSitu';
 import {BrowserRouter,Navigate, Route, Routes} from 'react-router-dom';
 import Inicio from './components/Pages/Home/Inicio/Inicio';
+import Inscripciones from './components/Pages/Home/Inscripciones/Inscripciones';
 
 const App = () =>{
   return (
@@ -26,6 +27,7 @@ const App = () =>{
                 <Route index element={<Inicio/>}/>
                 <Route path='/Departamentos' element={<Departamentos/>}/>
                 <Route path='/InSitu' element={<InSitu/>}/>
+                <Route path='/Inscripciones' element={<Inscripciones/>}/>
                 <Route path='*' element={<Navigate replace to='/'/>}/>
                 
               </Route>
