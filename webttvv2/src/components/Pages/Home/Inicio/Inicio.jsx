@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import * as api_getvideo from './api_getvideo'
 import { Home } from './Home';
 import { Profile } from './Profile';
-
+import Paypal from './Donaciones.jsx';
 //import Carousel from './Carousel/CarouselComp'
 export default function Inicio() {
 
@@ -56,7 +56,7 @@ export default function Inicio() {
                 <h4 className='text-center titulo'>
                     Donaciones
                 </h4>
-                
+                <Paypal/>
             </div>
   
         </div>
