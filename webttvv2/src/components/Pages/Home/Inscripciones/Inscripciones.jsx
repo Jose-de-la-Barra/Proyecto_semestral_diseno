@@ -10,32 +10,21 @@ export default function Inscripciones() {
     const onSumbitHandler=(submission)=>{
         setResult(submission);
         setSubmitted(true);
-    }
+    };
+    const handleSubmit=(data)=>{
+        console.log(data);
+      }
+
     
-
+    
     return (
-      <div>
-        <h2>Gracias por Inscribirte a Trabajos Voluntarios UAI</h2>
-        {
-            !submitted ?
-            <>
-            <Form form={'https://hhergvfybhaifwh.form.io/inscripciones'} onSubmit={onSumbitHandler}/>
-            </>
-        :
-        <>
-            <div>
-                <div>
-                    <h4>Gracias!</h4>
-                    <h5>{result?.data.name}</h5>
-                    <h5>{result?.data.email}</h5>
-                </div>
-            </div>
-        </>
-        }
+        <div style={{maxWidth: '400px', margin: '50px'}}>
+        <h3>Inscripciones Trabajos Voluntarios Verano 2022</h3>
+        <Form form={'https://hhergvfybhaifwh.form.io/inscripciones'} onSubmit={handleSubmit}/>
+        </div>
 
-        
-      </div>
     );
-  
+
+    
 }
 

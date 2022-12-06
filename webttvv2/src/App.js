@@ -22,6 +22,7 @@ const App = () =>{
       
         <div className="app">
           <BrowserRouter>
+          
             <Routes>
               <Route path='/' element={<NavbarComp/>}>
                 <Route index element={<Inicio/>}/>

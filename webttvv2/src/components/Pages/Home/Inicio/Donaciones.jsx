@@ -1,80 +1,84 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import paypal from 'paypal-checkout';
+import { useEffect } from "react";
+import {
+    PayPalScriptProvider,
+    PayPalButtons,
+    usePayPalScriptReducer
+} from "@paypal/react-paypal-js";
 
-const PaypalCheckoutButton = ( {order} ) => {
-    const paypalConf = {
-        currency: 'CLP',
-        env: 'sandbox',
-        client: {
-            sandbox: 'AeQCCohWnwiyDLplA3sdXECVWVTXWdnxFCw2nm1W80Bf5pQh714aKnGPsCpYYYHxjVxqYVp-wTLusCIg',
-            production: '-- id--',
-        },
-        style: {
-            label: 'pay',
-            size: 'medium',
-            shape: 'rect',
-            color: 'gold'
-        }
-    };
+const ButtonWrapper = ({ currency }) => {
+    // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
+    // This is the main reason to wrap the PayPalButtons in a new component
+    const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
-    const PayPalButton = paypal.Button.driver('react', {React, ReactDOM});
+    useEffect(() => {
+        dispatch({
+            type: "resetOptions",
+            value: {
+                ...options,
+                currency: currency,
+            },
+        });
+    }, [currency]);
 
-    const payment = (data, actions) => {
-        const payment = {
-            transactions:[
-                {
-                    amount: {
-                        total: order.total,
-                        currency: paypalConf.currency,
+ 
+     return (<PayPalButtons
+        fundingSource="paypal"
+        style={{"layout":"vertical","label":"donate"}}
+        disabled={false}
+        createOrder={(data, actions) => {
+            return actions.order
+                .create({
+                    purchase_units: [
+                        {
+                            amount: {
+                                value: "2",
+                                breakdown: {
+                                    item_total: {
+                                        currency_code: "USD",
+                                        value: "2",
+                                    },
+                                },
+                            },
+                            items: [
+                                {
+                                    name: "donation-example",
+                                    quantity: "1",
+                                    unit_amount: {
+                                        currency_code: "USD",
+                                        value: "2",
+                                    },
+                                    category: "DONATION",
+                                },
+                            ],
+                        },
+                    ],
+                })
+                .then((orderId) => {
+                    // Your code here after create the donation
+                    return orderId;
+                });
+        }}
+    />
+     );
+} 
 
-                    },
-                    description: 'Donación a TTVV',
-                    custom: order.customer || '',
-                    item_list: {
-                        items: order.items
-                    }
-                }
-            ],
-            note_to_payer: 'Contáctanos para cualquier aclaración',
-        };
-        return AuthenticatorAssertionResponse.payment.create({ payment });
-    };
-
-    const onAuthorize = (data, actiones) => {
-        return actiones.payment.execute()
-        .then(response => {
-            console.log(response);
-            alert('El pago fue procesado correctamente, ID: ${response.id}')
-        })
-        .catch(error => {
-            console.log(error);
-            alert('Ocurrió un error al procesar el pago con PayPal')
-        })
-    };
-
-    const onError = (error) => {
-        console.log(error);
-        alert('El pagp no fue realizado, vuelva a intentarlo');
-    };
-
-    const onCancel = (data, actions) => {
-        alert('Pago no realizado, el usuario canceló el proceso');
-    };
-
-    return(
-        <PayPalButton
-            env={paypalConf.env}
-            client={paypalConf.client}
-            payment={(data, actiones) => payment(data, actiones)}
-            onAuthorize={(data, actiones) => onAuthorize(data, actiones)}
-            onCancel={(data, actiones) => onCancel(data, actiones)}
-            onError={(error) => onError(error)}
-            style={paypalConf.style}
-            commit
-            locale="es_MX"
-        />
+ export default function Paypal() {
+     return (
+        <div
+             style={{ maxWidth: "750px", minHeight: "200px" }}
+        >
+            <PayPalScriptProvider
+                options={{
+                    "client-id": "test",
+                    components: "buttons",
+                    currency: "USD"
+                }}
+            >
+                <ButtonWrapper
+                    currency={"USD"}
+                />
+            </PayPalScriptProvider>
+        </div>
     );
-};
+ }
 
-export default PaypalCheckoutButton;
