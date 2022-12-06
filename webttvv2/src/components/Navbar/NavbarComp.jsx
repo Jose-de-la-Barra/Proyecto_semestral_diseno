@@ -23,10 +23,14 @@ function NavbarComp() {
             <Nav.Link as={Link} to="/Departamentos">Departamentos</Nav.Link>
             <Nav.Link as={Link} to="/InSitu">Trabajos In Situ</Nav.Link>
             <Nav.Link as={Link} to="/Inscripciones">Inscribete</Nav.Link>
-            {/*<Nav.Link as={Link} to="/">RRSS</Nav.Link>            */}
+            {/*<Nav.Link as={Link} to="/">RRSS</Nav.Link>  
+            
             <Nav.Link href="#" disabled>
               Inscribete
             </Nav.Link>
+            
+            */}
+            
           </Nav>
           
         </Navbar.Collapse>

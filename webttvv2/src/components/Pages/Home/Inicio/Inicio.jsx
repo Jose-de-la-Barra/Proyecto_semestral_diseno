@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 
 import * as api_getvideo from './api_getvideo'
+import { Home } from './Home';
+import { Profile } from './Profile';
 
 //import Carousel from './Carousel/CarouselComp'
 export default function Inicio() {
@@ -44,6 +46,16 @@ export default function Inicio() {
                     Sobre Nosotros
                 </h1>
                     <p>Anhelamos una sociedad más igualitaria, en la que todas las personas tengan acceso a las mismas oportunidades y condiciones de calidad de vida. Soñamos con comunidades unidas, que tengan acceso a espacios de encuentro, colaboración y aprendizaje. Proyectando un Chile mejor desde nuevos exponentes claros y fuertes de la acción social. Buscamos ser flexibles y adaptarnos a los nuevos desafíos de nuestras comunidades, para así continuar siendo agentes de cambio desde la solidaridad y el compromiso. Además, queremos que quienes compongan las siguientes generaciones de Trabajos Voluntarios tengan un sentido fuerte de responsabilidad social y pensamiento crítico, para que continúen interviniendo en sus espacios con el fin de transformarlos desde la empatía y el compromiso.</p>
+                
+            </div>
+            <div className='Home-section1'>
+                <h1 className='text-center titulo'>
+                    Cuentanos un poco más sobre ti!
+                </h1>
+                    <Home/>
+                <h4 className='text-center titulo'>
+                    Donaciones
+                </h4>
                 
             </div>
   
