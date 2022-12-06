@@ -15,7 +15,7 @@ export default function Inscripciones() {
 
     return (
       <div>
-        <h2>Gracias por Inscribirte a Trabajos Voluntarios UAI</h2>
+        <h2>Inscripciones TTVV UAI VERANO 2022</h2>
         {
             !submitted ?
             <>
