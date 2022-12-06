@@ -1,22 +1,41 @@
 
-import React from 'react';
+import {React,useState}from 'react';
 import {Form} from '@formio/react';
 
 import 'formiojs/dist/formio.builder.min.css'
 
-class Inscripciones extends React.Component {
+export default function Inscripciones() {
+    const [result,setResult]=useState(null);
+    const [submitted,setSubmitted ]= useState(false);
+    const onSumbitHandler=(submission)=>{
+        setResult(submission);
+        setSubmitted(true);
+    }
+    
 
-  handleSubmit(data) {
-    console.log(data);
-  }
-
-  render() {
     return (
-      <div style={{maxWidth: '400px', margin: '50px'}}>
-        <Form form={'https://hhergvfybhaifwh.form.io/inscripciones'} onSubmit={this.handleSubmit}/>
+      <div>
+        <h2>Gracias por Inscribirte a Trabajos Voluntarios UAI</h2>
+        {
+            !submitted ?
+            <>
+            <Form form={'https://hhergvfybhaifwh.form.io/inscripciones'} onSubmit={onSumbitHandler}/>
+            </>
+        :
+        <>
+            <div>
+                <div>
+                    <h4>Gracias!</h4>
+                    <h5>{result?.data.name}</h5>
+                    <h5>{result?.data.email}</h5>
+                </div>
+            </div>
+        </>
+        }
+
+        
       </div>
-    )
-  }
+    );
+  
 }
 
-export default Inscripciones;
